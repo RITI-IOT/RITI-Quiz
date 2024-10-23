@@ -15,7 +15,7 @@ reset.disabled = true;
 var correct_responses = 0;
 
 var correct = new Audio("./assets/music/correct.wav"); // buffers automatically when created
-var wrong = new Audio("./assets/music/wrong.wav"); // buffers automatically when created
+var wrong = new Audio("./assets/music/Wrong.wav"); // buffers automatically when created
 var success = new Audio("./assets/music/Success.wav"); // buffers automatically when created
 var gameOver = new Audio("./assets/music/GameOver.wav"); // buffers automatically when created
 
