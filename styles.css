@@ -6,9 +6,12 @@
     --congratulations: #ffc107;
     --saddened: #ebc4af;
     --matching-color: #23a3b4;
-    --matching-color1: #e9fcff;
-    --matching-color2: #198ec8;
+    --matching-color1: #D0E7F9;
+    --matching-color2: #61C0FF;
     --accent-color: #2ea0da; /* For highlights, inspired by gold/bronze */
+    --easy: #4CAF50;
+    --medium: #FFEB3B;
+    --hard: #FF5722;
 }
 
 html, body{
@@ -20,7 +23,7 @@ html, body{
     align-items: center;
 }
 section{
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -34,12 +37,16 @@ h1{
     font-family: 'Sixtyfour Convergence';
 }
 h2:not(#grade){
-    margin: 0 0 1vw;
+    margin: 0 0 2vw;
     font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #444444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 h4{
-    margin: 0 0 1vw;
+    margin: 0;
     font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    color: #444444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 strong{
     font-size: clamp(1.1rem, 1.8vw, 1.3rem);
@@ -57,12 +64,16 @@ p{
     display: flex;
     padding: 2vw;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
 }
 .slide{
     width: 100%;
     transition: 0.4s;
 }
-.slide:not(#first-slide){
+.slide{
     transform: translateX(100%);
     position: absolute;
 }
@@ -93,9 +104,10 @@ label:hover{
 }
 .buttons{
     display: flex;
-    width: clamp(28rem, 60vw, 45rem);
+    width: 100%;
     justify-content: space-between;
     gap: 2vw;
+    margin: 2vw 0 0;
 }
 button{
     cursor: pointer;
@@ -109,7 +121,7 @@ button{
     background-color: var(--correct-answer);
 }
 #previous{
-    background-color: var(--matching-color2);
+    background: linear-gradient(135deg, #64B5F6, #42A5F5)
 }
 #next{
     background-color: var(--matching-color);
@@ -152,3 +164,94 @@ input{
     }
 }
 
+#difficulty-selection{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    transition: 0.4s;
+    padding: 4vw 0;
+    position: relative;
+    align-items: center;
+    border-radius: 2rem;
+    width: 100%;
+    > button{
+        width: fit-content;
+    }
+}
+#easy{
+    background-color: #66BB6A ;
+    z-index: 1;
+}
+#medium{
+    background-color: #FFCA28;
+    z-index: 1;
+}
+#hard{
+    background-color: #FF7043;
+    z-index: 1;
+}
+button{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--matching-color2);
+}
+
+@media screen and (max-width: 700px) {
+    section{
+        width: 100%;
+    }
+    h2:not(#grade){
+        margin: 0 0 4vw;
+    }
+    .slide-block{
+        overflow: hidden;
+        display: flex;
+        padding: 8vw 0;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    .slide{
+        width: 100%;
+        transition: 0.4s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slide{
+        transform: translateX(100%);
+        position: absolute;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        margin: 2vw 0 0;
+        align-items: center;
+    }
+    label:hover{
+        filter: brightness(105%);
+    }
+    .buttons{
+        width: 90%;
+        margin: 2vw 0 0;
+    }
+    #last-phase{
+        text-align: center;
+        gap: 4vw;
+        width: 92%;
+        transition: 0.4s;
+        padding: 10vw 8vw;
+    }
+    #difficulty-selection{
+        gap: 4vw;
+        padding: 5vw 0;
+    }
+}

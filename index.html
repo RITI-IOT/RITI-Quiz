@@ -19,11 +19,17 @@
   <body>
     <section class="quiz-box">
       <h2>Quiz</h2>
-      <h4>Test out your knowledge on basics of Electronics</h4>
+      <h4>Test out your knowledge with us</h4>
       <div class="slide-block">
+        <div id="difficulty-selection">
+          <h4>Select your difficulty:</h4>
+          <button id="easy">Easy</button>
+          <button id="medium">Medium</button>
+          <button id="hard">Hard</button>
+        </div>
         <div class="slide" id="first-slide">
           <strong id="first-question" class="question">
-            1. Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            1. What does IoT stand for?
           </strong>
           <div class="choices">
             <form>
@@ -35,7 +41,7 @@
                   name="first-question"
                 />
                 <label for="first-first-choice" id="first-first-choicel"
-                  >Lorem Ipsum</label
+                  >Internet of Things</label
                 >
               </div>
               <div>
@@ -46,7 +52,7 @@
                   name="first-question"
                 />
                 <label for="first-second-choice" id="first-second-choicel"
-                  >Lorem Ipsum</label
+                  >Internet of Technology</label
                 >
               </div>
               <div>
@@ -57,7 +63,7 @@
                   name="first-question"
                 />
                 <label for="first-third-choice" id="first-third-choicel"
-                  >Lorem Ipsum</label
+                  >Interconnection of Things</label
                 >
               </div>
               <div>
@@ -68,7 +74,7 @@
                   id="first-fourth-choice"
                 />
                 <label for="first-fourth-choice" id="first-fourth-choicel"
-                  >Lorem Ipsum</label
+                  >Interface of Technology</label
                 >
               </div>
             </form>
@@ -76,7 +82,8 @@
         </div>
         <div class="slide" id="second-slide">
           <strong id="second-question" class="question">
-            2. Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            2. Which component act as a switch or amplifier for current in a
+            circuit?
           </strong>
           <div class="choices">
             <form>
@@ -88,7 +95,7 @@
                   name="second-question"
                 />
                 <label for="second-first-choice" id="second-first-choicel"
-                  >Lorem Ipsum</label
+                  >Resistor</label
                 >
               </div>
               <div>
@@ -99,7 +106,7 @@
                   name="second-question"
                 />
                 <label for="second-second-choice" id="second-second-choicel"
-                  >Lorem Ipsum</label
+                  >Capacitor</label
                 >
               </div>
               <div>
@@ -110,7 +117,7 @@
                   name="second-question"
                 />
                 <label for="second-third-choice" id="second-third-choicel"
-                  >Lorem Ipsum</label
+                  >Transistor</label
                 >
               </div>
               <div>
@@ -121,7 +128,7 @@
                   id="second-fourth-choice"
                 />
                 <label for="second-fourth-choice" id="second-fourth-choicel"
-                  >Lorem Ipsum</label
+                  >Diode</label
                 >
               </div>
             </form>
@@ -129,7 +136,7 @@
         </div>
         <div class="slide" id="third-slide">
           <strong id="third-question" class="question">
-            3. Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            3. What is the primary function of a battery in a circuit?
           </strong>
           <div class="choices">
             <form>
@@ -141,7 +148,7 @@
                   name="third-question"
                 />
                 <label for="third-first-choice" id="third-first-choicel"
-                  >Lorem Ipsum</label
+                  >Store data</label
                 >
               </div>
               <div>
@@ -152,7 +159,7 @@
                   name="third-question"
                 />
                 <label for="third-second-choice" id="third-second-choicel"
-                  >Lorem Ipsum</label
+                  >Provide power</label
                 >
               </div>
               <div>
@@ -163,7 +170,7 @@
                   name="third-question"
                 />
                 <label for="third-third-choice" id="third-third-choicel"
-                  >Lorem Ipsum</label
+                  >Control voltage</label
                 >
               </div>
               <div>
@@ -174,7 +181,7 @@
                   id="third-fourth-choice"
                 />
                 <label for="third-fourth-choice" id="third-fourth-choicel"
-                  >Lorem Ipsum</label
+                  >Transfer heat</label
                 >
               </div>
             </form>
@@ -182,7 +189,7 @@
         </div>
         <div class="slide" id="fourth-slide">
           <strong id="fourth-question" class="question">
-            4. Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            4. Which component is commonly used to store electrical charge?
           </strong>
           <div class="choices">
             <form>
@@ -194,7 +201,7 @@
                   name="fourth-question"
                 />
                 <label for="fourth-first-choice" id="fourth-first-choicel"
-                  >Lorem Ipsum</label
+                  >Diode</label
                 >
               </div>
               <div>
@@ -205,7 +212,7 @@
                   name="fourth-question"
                 />
                 <label for="fourth-second-choice" id="fourth-second-choicel"
-                  >Lorem Ipsum</label
+                  >Capacitor</label
                 >
               </div>
               <div>
@@ -216,7 +223,7 @@
                   name="fourth-question"
                 />
                 <label for="fourth-third-choice" id="fourth-third-choicel"
-                  >Lorem Ipsum</label
+                  >Transistor</label
                 >
               </div>
               <div>
@@ -227,7 +234,282 @@
                   id="fourth-fourth-choice"
                 />
                 <label for="fourth-fourth-choice" id="fourth-fourth-choicel"
-                  >Lorem Ipsum</label
+                  >Resistor</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="slide" id="fifth-slide">
+          <strong id="fifth-question" class="question">
+            5. Is a smart thermostat a smart home IoT device?
+          </strong>
+          <div class="choices">
+            <form>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="fifth-third-choice"
+                  name="fifth-question"
+                />
+                <label for="fifth-third-choice" id="fifth-third-choicel"
+                  >True</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  name="fifth-question"
+                  id="fifth-fourth-choice"
+                />
+                <label for="fifth-fourth-choice" id="fifth-fourth-choicel"
+                  >False</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="slide" id="sixth-slide">
+          <strong id="sixth-question" class="question">
+            6. Which component can convert sunlight into electricity?
+          </strong>
+          <div class="choices">
+            <form>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="sixth-first-choice"
+                  name="sixth-question"
+                />
+                <label for="sixth-first-choice" id="sixth-first-choicel"
+                  >Solar Panel</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="sixth-second-choice"
+                  name="sixth-question"
+                />
+                <label for="sixth-second-choice" id="sixth-second-choicel"
+                  >Resistor</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="sixth-third-choice"
+                  name="sixth-question"
+                />
+                <label for="sixth-third-choice" id="sixth-third-choicel"
+                  >Capacitor</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  name="sixth-question"
+                  id="sixth-fourth-choice"
+                />
+                <label for="sixth-fourth-choice" id="sixth-fourth-choicel"
+                  >Inductor</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="slide" id="seventh-slide">
+          <strong id="seventh-question" class="question">
+            7. What does LED stand for?
+          </strong>
+          <div class="choices">
+            <form>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="seventh-first-choice"
+                  name="seventh-question"
+                />
+                <label for="seventh-first-choice" id="seventh-first-choicel"
+                  >Light Emitting Diode</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="seventh-second-choice"
+                  name="seventh-question"
+                />
+                <label for="seventh-second-choice" id="seventh-second-choicel"
+                  >Low Energy Device</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="seventh-third-choice"
+                  name="seventh-question"
+                />
+                <label for="seventh-third-choice" id="seventh-third-choicel"
+                  >Light Energy Device</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  name="seventh-question"
+                  id="seventh-fourth-choice"
+                />
+                <label for="seventh-fourth-choice" id="seventh-fourth-choicel"
+                  >Light Electrical Display</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="slide" id="eighth-slide">
+          <strong id="eighth-question" class="question">
+            8. Is glass an electrical conductor?
+          </strong>
+          <div class="choices">
+            <form>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="eighth-third-choice"
+                  name="eighth-question"
+                />
+                <label for="eighth-third-choice" id="eighth-third-choicel"
+                  >True</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  name="eighth-question"
+                  id="eighth-fourth-choice"
+                />
+                <label for="eighth-fourth-choice" id="eighth-fourth-choicel"
+                  >False</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="slide" id="ninth-slide">
+          <strong id="ninth-question" class="question">
+            9. What do we call a material that heat or electricity can move
+            through?
+          </strong>
+          <div class="choices">
+            <form>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="ninth-first-choice"
+                  name="ninth-question"
+                />
+                <label for="ninth-first-choice" id="ninth-first-choicel"
+                  >Confusion</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="ninth-second-choice"
+                  name="ninth-question"
+                />
+                <label for="ninth-second-choice" id="ninth-second-choicel"
+                  >Cojunction</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="ninth-third-choice"
+                  name="ninth-question"
+                />
+                <label for="ninth-third-choice" id="ninth-third-choicel"
+                  >Conductor</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  name="ninth-question"
+                  id="ninth-fourth-choice"
+                />
+                <label for="ninth-fourth-choice" id="ninth-fourth-choicel"
+                  >Converter</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="slide" id="tenth-slide">
+          <strong id="tenth-question" class="question">
+            10. Which of the following materials is an insulator?
+          </strong>
+          <div class="choices">
+            <form>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="tenth-first-choice"
+                  name="tenth-question"
+                />
+                <label for="tenth-first-choice" id="tenth-first-choicel"
+                  >Aluminum Wire</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="tenth-second-choice"
+                  name="tenth-question"
+                />
+                <label for="tenth-second-choice" id="tenth-second-choicel"
+                  >Steel Paper Clip</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  id="tenth-third-choice"
+                  name="tenth-question"
+                />
+                <label for="tenth-third-choice" id="tenth-third-choicel"
+                  >Rubber sole</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="the-choices"
+                  name="tenth-question"
+                  id="tenth-fourth-choice"
+                />
+                <label for="tenth-fourth-choice" id="tenth-fourth-choicel"
+                  >Gold Ring</label
                 >
               </div>
             </form>
@@ -252,9 +534,10 @@
         <h1>Whyyyyy?!</h1>
         <p>No problem. We could help you if you join us at RITI.</p>
       </div>
-      <h2><span id="grade"></span>/ 4</h2>
+      <h2><span id="grade"></span>/ 10</h2>
       <button id="okay">Okay</button>
     </div>
+    <canvas id="particle-canvas"></canvas>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script src="./script.js"></script>

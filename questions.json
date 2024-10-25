@@ -1,0 +1,128 @@
+{
+    "medium": [
+      {
+        "question": "What is the unit of electric power?",
+        "options": ["Volt", "Watt", 
+        "Ampere", "Ohm"],
+        "answer": "Watt"
+      },
+      {
+        "question": "Which device converts electrical energy into mechanical energy?",
+        "options": ["Battery", "Transformer", "Motor", "Generator"],
+        "answer": "Motor"
+      },
+      {
+        "question": "What is Ohm's Law?",
+        "options": ["V = IR", "R = V/I", "I = V/R", "None of the above"],
+        "answer": "V = IR"
+      },
+      {
+        "question": "What programming language is used to code an Arduino?",
+        "options": ["C++", "C#", "Java", "Python"],
+        "answer": "C++"
+      },
+      {
+        "question": "An Arduino Uno is a microcontroller, not a microprocessor",
+        "options": ["True", "False"],
+        "answer": "True"
+      },
+      {
+        "question": "What component is used to separate the conductive plates in a capacitor?",
+        "options": [
+          "A diode",
+          "An Inductor",
+          "A resistor",
+          "A dielectric"
+        ],
+        "answer": "A dielectric"
+      },
+      {
+        "question": "What is the purpose of a 'for' loop in programming?",
+        "options": [
+          "To iterate over a sequence",
+          "To run code only once",
+          "To stop the execution of code",
+          "To define a function"
+        ],
+        "answer": "To iterate over a sequence"
+      },
+      {
+        "question": "Is silicon the primary material used in most solar panels to absorb sunlight?",
+        "options": ["True", "False"],
+        "answer": "True"
+      },
+      {
+        "question": "In Python, which symbol is used to comment out a single line of code?",
+        "options": ["//", "#", "/*", "<!--"],
+        "answer": "#"
+      },
+      {
+        "question": "Which instrument is used to measure electric current in a circuit?",
+        "options": ["Voltmeter", "Ammeter", "Wattmeter", "Ohmmeter"],
+        "answer": "Ammeter"
+      }
+    ],
+    "hard": [
+      {
+        "question": "For what reason is the fuse used in an electrical circuit?",
+        "options": ["To connect components", "To measure current", "To protect against overload", "To store energy"],
+        "answer": "To protect against overload"
+      },
+      {
+        "question": "In PNP transistor, which direction does the current flow?",
+        "options": ["From emitter to base", "From collector to emitter", "From collector to base", "From base to collector"],
+        "answer": "From emitter to base"
+      },
+      {
+        "question": "In series circuit, how does the current at each point in the circuit compare?",
+        "options": ["Current varies at each point", "Current depends on the voltage source", "Current is the same at every point", "None of the above"],
+        "answer": "Current is the same at every point"
+      },
+      {
+        "question": "What is the primary process by which solar panels coverts sunlight into electricity?",
+        "options": ["Photovoltaic effect", "Chemical reaction", "Thermal energy conversion", "Magnetic Induction"],
+        "answer": "Photovoltaic effect"
+      },
+      {
+        "question": "The main principle for the operation of an electric motor is Electromagnetic Induction",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "True"
+      },
+      {
+        "question": "what types of sensors is primarily used to detect change in light intensity?",
+        "options": ["Thermocouple", "Light Sensor", "Moisture Sensor", "Piezoelectric Sensor"],
+        "answer": "Light Sensor"
+      },
+      {
+        "question": "What principle do ultrasonic sensor operate on to measure distance?",
+        "options": ["Sound Wave reflection", "Electromagnetic Induction", "Infrared Reflection", "Capacitance Change"],
+        "answer": "Sound Wave reflection"
+      },
+      {
+        "question": "The direction of conventional current flow is from negative to positive",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "False"
+      },
+      {
+        "question": "What is the primary function of a multimeter?",
+        "options": [
+          "To detect frequency",
+          "To measure temperature only",
+          "To measure voltage, current and resistance",
+          "To measure water level"
+        ],
+        "answer": "To measure voltage, current and resistance"
+      },
+      {
+        "question": "What types of motor is often used in automated irrigation system to control water flow in the soil?",
+        "options": ["AC Motor", "Stepper Motor", "Servo Motor", "Brushless DC Motor"],
+        "answer": "Brushless DC Motor"
+      }
+    ]
+}
