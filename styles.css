@@ -118,6 +118,7 @@ button{
     border: none;
     color: white;
     font-weight: 700;
+    font-size: clamp(0.6rem, 1.8vw, 1.3rem);
 }
 #reset{
     background-color: var(--correct-answer);
