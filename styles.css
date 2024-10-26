@@ -37,19 +37,19 @@ h1{
     font-family: 'Sixtyfour Convergence';
 }
 h2:not(#grade){
-    margin: 0 0 2vw;
-    font-size: clamp(1rem, 4vw, 2.5rem);
+    font-size: clamp(1rem, 5vw, 2.5rem);
     color: #444444;
+    margin: 0 0 2vw;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 h4{
-    margin: 0;
-    font-size: clamp(0.8rem, 2.5vw, 1.7rem);
+    font-size: clamp(0.8rem, 4vw, 1.7rem);
     color: #444444;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 strong{
-    font-size: clamp(0.6rem, 1.8vw, 1.3rem);
+    font-size: clamp(0.6rem, 2.5vw, 1.3rem);
 }
 label{
     cursor: pointer;
@@ -58,12 +58,12 @@ label{
 p{
     font-family: 'Open Sans';
     font-weight: 600;
-    font-size: clamp(0.6rem, 1.8vw, 1.3rem);
+    font-size: clamp(0.6rem, 2.5vw, 1.3rem);
 }
 .slide-block{
     overflow: hidden;
     display: flex;
-    padding: 2vw;
+    padding: 1vw;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ p{
 form{
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: clamp(0.5rem, 1.5vw, 0.8rem);
     margin: 2vw 0 0;
     > div{
         display: flex;
@@ -92,13 +92,13 @@ form{
         display: flex;
         align-items: center;
         padding: clamp(0.2rem, 1.4vw, 0.9rem) 1vw clamp(0.2rem, 1.4vw, 0.9rem); 
-        width: 90%;
+        width: 100%;
         background-color: var(--matching-color1);
         color: var(--accent-color);
         border-radius: 0.5vw;
         transition: 0.4s;
         font-weight: 600;
-        font-size: clamp(0.6rem, 1.8vw, 1.3rem);
+        font-size: clamp(0.6rem, 2.5vw, 1.3rem);
     }
 }
 label:hover{
@@ -113,12 +113,12 @@ label:hover{
 }
 button{
     cursor: pointer;
-    padding: 2vw 3vw;
+    padding: clamp(0.1rem, 2vw, 1rem) clamp(0.2rem, 3vw, 1.5rem);
     border-radius: 2rem;
     border: none;
     color: white;
     font-weight: 700;
-    font-size: clamp(0.6rem, 1.8vw, 1.3rem);
+    font-size: clamp(0.6rem, 2.5vw, 1.3rem);
 }
 #reset{
     background-color: var(--correct-answer);
@@ -172,7 +172,7 @@ input{
     flex-direction: column;
     gap: 2vw;
     transition: 0.4s;
-    padding: 4vw 0;
+    padding: 2vw 0;
     position: relative;
     align-items: center;
     border-radius: 2rem;
@@ -208,46 +208,7 @@ button{
 
 @media screen and (max-width: 700px) {
     section{
-        width: 100%;
-    }
-    h2:not(#grade){
-        margin: 0 0 4vw;
-    }
-    .slide-block{
-        overflow: hidden;
-        display: flex;
-        padding: 8vw 0;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-    }
-    .slide{
-        width: 100%;
-        transition: 0.4s;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .slide{
-        transform: translateX(100%);
-        position: absolute;
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        gap: 2vw;
-        margin: 2vw 0 0;
-        align-items: center;
-    }
-    label{
-        width: 100%;
-    }
-    label:hover{
-        filter: brightness(105%);
-    }
-    .buttons{
-        width: 90%;
-        margin: 2vw 0 0;
+        width: 80%;
     }
     #last-phase{
         text-align: center;
