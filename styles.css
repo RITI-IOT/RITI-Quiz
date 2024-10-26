@@ -91,7 +91,7 @@ form{
         position: relative;
         display: flex;
         align-items: center;
-        padding: clamp(0.2rem, 1.4vw, 0.9rem) 2vw clamp(0.2rem, 1.4vw, 0.9rem);
+        padding: clamp(0.2rem, 1.4vw, 0.9rem) 1vw clamp(0.2rem, 1.4vw, 0.9rem); 
         width: 90%;
         background-color: var(--matching-color1);
         color: var(--accent-color);
