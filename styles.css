@@ -239,6 +239,9 @@ button{
         margin: 2vw 0 0;
         align-items: center;
     }
+    label{
+        width: 100%;
+    }
     label:hover{
         filter: brightness(105%);
     }
