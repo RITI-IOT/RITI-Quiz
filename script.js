@@ -146,7 +146,7 @@ forms.forEach(form => {
         const selectedid = selected.getAttribute("id");
         const selectedlabel = document.getElementById(selectedid + "l");
         answered[pointer] = true;
-        selectedlabel.style.padding = "clamp(0.9rem, 1.6vw, 1.1rem) 0 clamp(0.9rem, 1.6vw, 1.1rem) 1.7rem"
+        selectedlabel.style.padding = "clamp(0.2rem, 1.4vw, 0.9rem) 2vw clamp(0.2rem, 1.4vw, 0.9rem)"
         if(pointer == 0){ 
             if(selectedlabel.textContent == answers[pointer]){
                 correct_responses++;

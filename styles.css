@@ -91,7 +91,7 @@ form{
         position: relative;
         display: flex;
         align-items: center;
-        padding: clamp(0.2rem, 1.4vw, 0.9rem) 0 clamp(0.2rem, 1.4vw, 0.9rem) 2vw;
+        padding: clamp(0.2rem, 1.4vw, 0.9rem) 2vw clamp(0.2rem, 1.4vw, 0.9rem);
         width: 90%;
         background-color: var(--matching-color1);
         color: var(--accent-color);
@@ -113,7 +113,7 @@ label:hover{
 }
 button{
     cursor: pointer;
-    padding: 0.5rem 2rem;
+    padding: 2vw 3vw;
     border-radius: 2rem;
     border: none;
     color: white;
