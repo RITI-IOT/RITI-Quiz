@@ -91,13 +91,14 @@ form{
         position: relative;
         display: flex;
         align-items: center;
-        padding: clamp(0.7rem, 1.4vw, 0.9rem) 0 clamp(0.7rem, 1.4vw, 0.9rem) 1.5rem;
-        width: clamp(28rem, 60vw, 45rem);
+        padding: clamp(0.2rem, 1.4vw, 0.9rem) 0 clamp(0.2rem, 1.4vw, 0.9rem) 1.5rem;
+        width: 90%;
         background-color: var(--matching-color1);
         color: var(--accent-color);
         border-radius: 0.5vw;
         transition: 0.4s;
         font-weight: 600;
+        font-size: clamp(0.6rem, 1.8vw, 1.3rem);
     }
 }
 label:hover{
