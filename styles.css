@@ -156,7 +156,7 @@ input{
     padding: 2vw 8vw;
     z-index: -1;
     border-radius: 2rem;
-    width: 100%;
+    width: 60%;
     > div{
         display: flex;
         flex-direction: column;
