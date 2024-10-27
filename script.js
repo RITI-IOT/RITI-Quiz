@@ -56,6 +56,9 @@ var hardQuestions = [];
 
 var mediumOptions = [];
 var hardOptions = [];
+
+var diffic = 0;
+
 fetch("./questions.json")
     .then(response => response.json())
     .then(data =>{
@@ -68,6 +71,7 @@ easy.addEventListener("click", function(){
     answers = ["Internet of Things", "Transistor", "Provide power", "Capacitor", "True", "Solar Panel", "Light Emitting Diode", "False", "Conductor", "Rubber sole"];
 })
 medium.addEventListener("click", function(){
+    diffic = 1;
     mediumsound.play();
     firstPhase();
     mediumArray.forEach((ma, index) =>{
@@ -86,6 +90,7 @@ medium.addEventListener("click", function(){
     })
 })
 hard.addEventListener("click", function(){
+    diffic = 2;
     hardsound.play();
 
     firstPhase();
@@ -374,12 +379,32 @@ forms.forEach(form => {
         if(overall){
             grade.textContent = correct_responses;
             if(correct_responses > 5){
+                const goodverdict = great.querySelector("h1");
+                const gooddescription = great.querySelector("p");
+                if(diffic == 1){
+                    goodverdict.textContent = "Great!";
+                    gooddescription.textContent = "Great work, honestly. Now, you should try out our Hard difficulty."
+                }
+                if(diffic == 2){
+                    goodverdict.textContent = "You're Awesome!";
+                    gooddescription.textContent = "Awesome work! Perhaps you would do wonders at our RITI."
+                }
                 great.style.display = "flex";
                 lastPhase.style.backgroundColor = congratulationColor;
                 triggerConfetti();
                 success.play();
             }
             else{
+                const badverdict = chaos.querySelector("h1");
+                const baddescription = chaos.querySelector("p");
+                if(diffic == 1){
+                    badverdict.textContent = "You were that close! (or not)"
+                    baddescription.textContent = "I suppose you stick with the Easy difficulty";
+                }
+                if(diffic == 2){
+                    badverdict.textContent = "Too much for You!";
+                    baddescription.textContent = "Well, you tried to reach too far. You have easier difficulties to choose from."
+                }
                 chaos.style.display = "flex";
                 lastPhase.style.backgroundColor = saddenedColor;
                 gameOver.play();

@@ -63,7 +63,7 @@ p{
 .slide-block{
     overflow: hidden;
     display: flex;
-    padding: 1vw;
+    padding: 3vw 1vw;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -149,12 +149,14 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 1vw;
     opacity: 0;
     transition: 0.4s;
     padding: 2vw 8vw;
     z-index: -1;
     border-radius: 2rem;
+    width: 100%;
     > div{
         display: flex;
         flex-direction: column;
