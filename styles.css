@@ -75,7 +75,7 @@ p{
     transition: 0.4s;
 }
 .slide{
-    transform: translateX(100%);
+    transform: translateX(102%);
     position: absolute;
 }
 form{
@@ -208,7 +208,7 @@ button{
 
 @media screen and (max-width: 700px) {
     section{
-        width: 80%;
+        width: 75%;
     }
     p, strong, label, button{
         font-size: clamp(0.6rem, 4vw, 1.3rem) !important;
@@ -221,6 +221,7 @@ button{
     }
     label{
         padding: clamp(0.5rem, 3vw, 0.6rem) !important;
+        border-radius: 1.5vw !important;
     }
     form{
         gap: 2vw;

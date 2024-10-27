@@ -125,7 +125,7 @@ next.addEventListener("click", function(){
 })
 
 previous.addEventListener("click", function(){
-    slides[pointer].style.transform = "translateX(100%)";
+    slides[pointer].style.transform = "translateX(102%)";
     
     if(pointer > 0){
         pointer--;
